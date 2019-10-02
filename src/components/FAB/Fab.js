@@ -17,7 +17,7 @@ export default function Fab() {
         aria-label="add"
         className={classes.margin}
       >
-        teste
+        Musica
       </Fab>
     </View>
   );

@@ -4,6 +4,7 @@ import { StyleSheet, Text,View, TextInput } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
+      
       <Text>Open up App.js to start work on your app!</Text>
     </View>
   );
