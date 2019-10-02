@@ -16,7 +16,26 @@ export const styles = StyleSheet.create({
     setTextStyle : {
       fontSize: 20,
       color: '#4e3880'
-    }
+    },
+     
+    submit:{
+      marginRight:40,
+      marginLeft:40,
+      marginTop:10,
+  },
+  submitText:{
+      width: 150,
+      height: 50,
+      paddingTop:15,
+      fontSize: 18,
+      color:'#fff',
+      textAlign:'center',
+      backgroundColor:'#8A2BE2',
+      borderRadius: 50,
+      borderWidth: 1,
+      borderColor: '#fff'
+  }
+
   });
 
   export const TabsContainer = styled.ScrollView.attrs({
@@ -30,7 +49,7 @@ export const styles = StyleSheet.create({
   
   width: 80px; 
   height: 80px;
-  background: rgba(55, 65, 64,0.2);
+  background: rgba(250, 255, 212,0.7);
   border-radius: 25px;
   margin-left: 7px;
   padding: 10px;
@@ -40,8 +59,7 @@ export const styles = StyleSheet.create({
   export const TabText = styled.Text`
   font-size:13px;
    color:#FFF;
-  `;
-
+  `
 
 
 
@@ -53,8 +71,7 @@ export const Tabsp = styled.ScrollView.attrs({
     contentContainerStyle: {
         width: 371,
         height: 100,
-        backgroundColor: "#BDC3C7",
-        
+        backgroundColor: "#e6e8dc",   
        
     
          padding: 10},
