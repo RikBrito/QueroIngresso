@@ -8,16 +8,21 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/icons": "^4.4.3",
     "expo": "^35.0.0",
     "firebase": "^7.0.0",
     "react": "16.8.3",
-    "react-dom": "16.8.3",
+    "react-dom": "^16.10.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
     "react-native-gesture-handler": "^1.4.1",
+    "react-native-range-slider": "^0.1.2",
     "react-native-web": "^0.11.7",
     "react-navigation": "^4.0.9",
     "react-navigation-tabs": "^2.5.5",
-    "react-router-dom": "^5.1.0"
+    "react-rangeslider": "^2.2.0",
+    "react-router-dom": "^5.1.1",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^7.0.0"

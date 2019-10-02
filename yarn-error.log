@@ -5,7 +5,7 @@ PATH:
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\hsbri\AppData\Local\Microsoft\WindowsApps;;C:\Users\hsbri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hsbri\AppData\Roaming\npm;C:\Users\hsbri\AppData\Local\Yarn\bin
 
 Yarn version: 
-  1.17.3
+  1.16.0
 
 Node version: 
   10.16.3
@@ -5139,7 +5139,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
     integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
   
+<<<<<<< HEAD
   safe-buffer@>=5.1.0, safe-buffer@^5.1.2:
+=======
+  safe-buffer@^5.1.2:
+>>>>>>> 11ba0d037685a295c0ee10ba0da91ac50330e0fe
     version "5.2.0"
     resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
     integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
