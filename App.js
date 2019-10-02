@@ -1,19 +1,40 @@
 import React from 'react';
-import { StyleSheet, Text,View, TextInput } from 'react-native';
+import {
+  KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Text, View
+} from 'react-native';
+import { Font } from 'expo';
+import { Ionicons } from '@expo/vector-icons';
+import * as firebase from 'firebase';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start work on your app!</Text>
-    </View>
-  );
+import Routes from './src/routes';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyBYOt4BXvodbG71QQUp_UuNzyL0zWmNz7I',
+  authDomain: 'conev-b8fce.firebaseapp.com',
+  databaseURL: 'https://conev-b8fce.firebaseio.com',
+  projectId: 'conev-b8fce',
+  storageBucket: 'conev-b8fce.appspot.com',
+  messagingSenderId: '688270298055',
+  appId: '1:688270298055:web:451c002f6c47c22e'
+};  
+firebase.initializeApp(firebaseConfig);
+
+export default class App extends React.Component {
+  async componentDidMount() {
+    await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      ...Ionicons.font
+    });
+  }
+
+  render() {
+    return (
+      <KeyboardAvoidingView enabled behavior="padding" style={{ flex: 1 }}>
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+          <Routes />
+        </TouchableWithoutFeedback>
+      </KeyboardAvoidingView>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
